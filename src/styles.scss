@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import 'hamburgers/dist/hamburgers.min.css';
+@import 'aos/dist/aos.css';
+
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  position: relative;
+  overflow-x: hidden !important;
+  min-height: 100vh;
+
+}
+
+img{
+  @apply block h-auto max-w-full w-full;
+}
+a{
+  @apply text-current inline-block;
+}
+
+.hamburger{
+  padding: 0;
+  scale: .75;
+}
+.hamburger:hover,
+.hamburger.is-active:hover {
+  opacity: 1;
+}
+
+.hamburger-inner,
+.hamburger-inner::after,
+.hamburger-inner::before {
+  @apply bg-current;
+}
+
+.hamburger.is-active {
+
+  .hamburger-inner,
+  .hamburger-inner::after,
+  .hamburger-inner::before {
+    @apply bg-current;
+  }
+}
+
+.menu{
+  @apply max-lg:max-h-0;
+  &.is-active{
+    @apply max-lg:max-h-[300px];
+  }
+}
+.slider{
+  @apply relative overflow-hidden;
+  & picture{
+    @apply absolute top-0 left-0 w-full h-auto transition-all duration-[700ms] opacity-0;
+    &.active{
+      @apply relative z-10 opacity-100;
+    }
+  }
+}
+br{
+  @apply max-lg:hidden;
+}

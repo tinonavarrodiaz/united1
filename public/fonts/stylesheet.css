@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Abril Fatface';
+    src: url('AbrilFatface-Regular.woff2') format('woff2'),
+        url('AbrilFatface-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Century Gothic Pro';
+    src: url('CenturyGothicPro.woff2') format('woff2'),
+        url('CenturyGothicPro.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
