@@ -1,3 +1,4 @@
+import Brands from "../organism/Brands"
 import Distribution from "../organism/Distribution"
 import Header from "../organism/Header"
 import Importing from "../organism/Importing"
@@ -17,8 +18,9 @@ function Page() {
         {/* <Sliders/>
         <Whatwedo/>
         <Services/>
-        <Distribution/> */}
-        <Importing />
+        <Distribution/>
+        <Importing /> */}
+        <Brands />
       </main>
     </>
   )

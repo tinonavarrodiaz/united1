@@ -72,3 +72,31 @@ br{
 //     margin-bottom: 0;
 //   }
 // }
+.Brands{
+  &__gallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1.5em;
+
+    @media (min-width: 768px){
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 5.1250dvw;
+    }
+    @media (min-width: 1024px){
+      grid-template-columns: repeat(4, 1fr);
+      row-gap: 3.1250dvw;
+    }
+  }
+  &__item{
+
+    &:nth-child(6){
+      @media (min-width: 1024px){
+
+      }
+    }
+  }
+  &__img{
+    @media (min-width: 768px){
+    }
+  }
+}
